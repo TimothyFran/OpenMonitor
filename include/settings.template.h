@@ -25,4 +25,9 @@
 // Interval for logging data in milliseconds.
 #define LOG_INTERVAL 5000 // 5 seconds
 
+// --- Analog Microphone Sensor Settings ---
+#define VREF_VALUE 3.3f
+#define ANALOG_MIC_GAIN 75.0f
+#define ANALOG_MIC_SAMPLING_DURATION 50UL // ms
+
 #endif

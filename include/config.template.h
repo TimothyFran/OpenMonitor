@@ -26,6 +26,14 @@ extern SensorManager sensorManager;
 // #include <MQ135Sensor.h>
 // MQ135Sensor mq135Sensor = MQ135Sensor("MQ-135", 35);
 
+
+// Example: Including and instantiating an analog microphone sensor
+// #include <AnalogMicrophoneSensor.h>
+// AnalogMicrophoneSensor analogMic1 = AnalogMicrophoneSensor(
+//     "AnalogMic1",
+//     ANALOG_MIC_PIN // from settings.h
+// );
+
 // Add additional sensors below as needed, following the examples above.
 
 // --- Add Sensors to the Manager ---
@@ -38,6 +46,9 @@ void addSensorsToManager() {
     // Example of adding sensors to the manager:
     // sensorManager.addSensor(&mpu6050_1, true, true);
     // sensorManager.addSensor(&mq135Sensor, true, true);
+
+    // Example of adding a generic analog input sensor:
+    // sensorManager.addSensor(&analogInput1, true, true);
 
     // Add more sensors here, customizing error handling as needed.
     // This function is called during system setup to register all active sensors.
